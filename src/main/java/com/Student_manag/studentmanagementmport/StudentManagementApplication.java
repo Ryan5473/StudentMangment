@@ -1,6 +1,4 @@
-package com.burak.studentmanagement;
-
-import org.springframework.boot.SpringApplication;
+package com.Student_manag.studentmanagementmport org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
