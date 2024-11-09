@@ -1,4 +1,4 @@
-package com.burak.studentmanagement.controller;
+package com.Student_manag.studentmanagement.controller;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.burak.studentmanagement.config;
+package com.Student_manag.studentmanagement.config;
 
 import java.io.IOException;
 
