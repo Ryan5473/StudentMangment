@@ -1,10 +1,10 @@
 package com.burak.studentmanagement.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "role")
-public class Role{
+public class Groupe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,11 +12,12 @@ public class Role{
 
     private String nom;
 
-    @ManyToMany(mappedBy = "roles")
-    private List<Student> students;
+    @ManyToOne
+    @JoinColumn(name = "classe_id")
+    private Classe classe;
 
-    @ManyToMany(mappedBy = "roles")
-    private List<Professeur> professeurs;
+    @OneToMany(mappedBy = "groupe", cascade = CascadeType.ALL)
+    private List<Student> students;
 
     // Getters, Setters, Constructors
 }
